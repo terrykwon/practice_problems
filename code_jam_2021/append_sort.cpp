@@ -1,6 +1,3 @@
-/**
- * Not solved yet! 
- */ 
 #include <iostream>
 #include <string>
 using namespace std;
