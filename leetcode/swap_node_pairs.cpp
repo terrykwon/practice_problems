@@ -26,9 +26,9 @@ public:
         while (first && first->next) {
             second = first->next;
 
-            if (second && second->next) {
+            if (second->next && second->next->next) {
                 first->next = second->next->next;
-            } else if (second) {
+            } else {
                 first->next = second->next;
             }
 
