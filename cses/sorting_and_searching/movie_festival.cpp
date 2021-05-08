@@ -8,7 +8,7 @@ bool comparator(const pair<int,int> &a, const pair<int,int> &b) {
 }
 
 /**
- * Maximum number of non-overlapping interval.
+ * Maximum number of non-overlapping intervals.
  */
 int main() {
     int n;
