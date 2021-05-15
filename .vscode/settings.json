@@ -5,6 +5,13 @@
         "vector": "cpp",
         "utility": "cpp",
         "iterator": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "__string": "cpp",
+        "__tree": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "regex": "cpp",
+        "bitset": "cpp",
+        "cstdlib": "cpp"
     }
 }
