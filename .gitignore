@@ -1,2 +1,6 @@
 .build/
 *.dSYM
+
+# Not public
+kakao/
+foobar/
