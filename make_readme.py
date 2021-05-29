@@ -16,7 +16,7 @@ for directory in files_per_dir:
             if filepath in ['.DS_Store']:
                 continue
             full_path = os.path.join(dirpath, filepath)
-            print(full_path)
+            # print(full_path)
             files_per_dir[directory] += 1
 
 with open('readme.md', 'w') as f:
@@ -24,3 +24,5 @@ with open('readme.md', 'w') as f:
     f.write('| --------- | ---------- |\n')
     for directory, counts in files_per_dir.items():
         f.write('| {} | {} |\n'.format(directory, counts))
+
+print('readme updated!')

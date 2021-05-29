@@ -13,5 +13,12 @@
         "regex": "cpp",
         "bitset": "cpp",
         "cstdlib": "cpp"
+    },
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
     }
 }
