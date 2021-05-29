@@ -3,5 +3,5 @@
 | code_jam | 11 |
 | codeforces | 12 |
 | cses | 38 |
-| implementations | 18 |
+| algorithms | 18 |
 | leetcode | 34 |

@@ -6,7 +6,7 @@ files_per_dir = OrderedDict((d, 0) for d in [
             'code_jam', 
             'codeforces', 
             'cses', 
-            'implementations', 
+            'algorithms', 
             'leetcode',
           ])
 
