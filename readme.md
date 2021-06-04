@@ -2,6 +2,6 @@
 | --------- | ---------- |
 | code_jam | 11 |
 | codeforces | 12 |
-| cses | 39 |
+| cses | 40 |
 | algorithms | 18 |
-| leetcode | 34 |
+| leetcode | 35 |
