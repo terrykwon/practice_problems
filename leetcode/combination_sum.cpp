@@ -21,12 +21,10 @@ void print_set(set<int>& s) {
 }
 
 /**
- * 1 <= candidates.length <= 30
- * 1 <= candidates[i] <= 200
- * All elements of candidates are distinct.
- * 1 <= target <= 500
+ * This solution uses a DP table, but actually is equivalent in time complexity
+ * to just DFS + backtracking as it revists all past "branches" (combinations),
+ * and less memory-efficient as well.
  */
-
 class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
@@ -44,7 +42,6 @@ public:
                         vector<int> v_copy = v;
                         v_copy.push_back(c);
                         dp[i].push_back(v_copy);
-                        // cout << c << endl;
                     }
                 } 
             }
