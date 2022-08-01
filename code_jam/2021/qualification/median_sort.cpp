@@ -3,6 +3,8 @@
 using namespace std;
 
 
+// TODO: unsolved
+
 void test_case(int N, int Q) {
     list<int> result;
     int median;
