@@ -12,7 +12,8 @@
         "functional": "cpp",
         "regex": "cpp",
         "bitset": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "ostream": "cpp"
     },
     "files.exclude": {
         "**/.git": false,
