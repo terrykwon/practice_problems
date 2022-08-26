@@ -18,18 +18,18 @@ public:
         if (!n) {
             return prev_height;
         } else {
-            int l_height = checkHeightAndBalance(root->left);
+            int l_height = checkHeightAndBalance(n->left, prev_height+1);
             if (l_height == -1) {
                 return -1;
             }
-            int r_height = checkHeightAndBalance(root->right);
+            int r_height = checkHeightAndBalance(n->right, prev_height+1);
             if (r_height == -1) {
                 return -1;
             }
             if (abs(l_height - r_height) > 1) {
                 return -1;
             }
-            return max(l_height+1, r_height+1);
+            return max(l_height, r_height);
         }
     }
 };
