@@ -32,7 +32,7 @@ public:
     }
     
     int peek() {
-        if (s2.empty()) {
+        if (s2.empty()) {  // Case that there are were only pushes, no pops.
             while (!s1.empty()) {
                 int y = s1.top();
                 s1.pop();
