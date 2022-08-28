@@ -14,5 +14,10 @@ public:
     ListNode* middleNode(ListNode* head) {
         ListNode* l = head;       
         ListNode* r = head;       
+        while (r && r->next) {
+            l = l->next;
+            r = r->next->next;
+        }
+        return l;
     }
 };
