@@ -16,9 +16,10 @@ public:
             l++;
             d_l *= 10;
         }
+        d_l /= 10;  // Overcounts one loop
 
         for (int i = 0; i < l/2; i++) {
-            int left = (x % d_l) / (d_l/10);
+            int left = (x / d_l) % 10;
             int right = (x / d_r) % 10;
             if (left != right) {
                 return false;
