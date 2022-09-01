@@ -5,13 +5,11 @@ using namespace std;
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
-        int MAX_LENGTH = 200;
         string prefix = ""; 
 
-        for (int i = 0; i < MAX_LENGTH; i++) {
-            if (i >= strs[0].size()) {
-                return prefix;
-            }
+        // We can bound the number of positions searched by the length of
+        // strs[0] because no common prefix can be longer than that.
+        for (int i = 0; i < strs[0].size(); i++) {
             char first = strs[0][i];
             for (int j = 1; j < strs.size(); j++) {
                 if (i >= strs[j].size()) {
