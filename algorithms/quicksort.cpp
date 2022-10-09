@@ -13,27 +13,24 @@ pair<int, int> three_way_partition(vector<int> &a, int l, int r) {
     int pivot = a[r];
     int i = l;
     int j = l;
-    int k = l;
+    int k = r;
 
-    while (k < r) {
-        if (a[k] < pivot) {
-            swap(a[i], a[k]);
+    while (j <= k) {
+        if (a[j] < pivot) {
+            swap(a[i], a[j]);
             i++;
             j++;
-            k++;
-        } else if (a[k] == pivot) {
-            swap(a[j], a[k]);
+        } else if (a[j] == pivot) {
             j++;
-            k++;
         } else {
-            k++;
+            swap(a[j], a[k]);
+            k--;
         }
     }
 
-    swap(a[i], a[j]);
-    swap(a[j], a[r]);
+    // We don't need to swap pivot because it's already part of the algorithm.
 
-    return {i-1, j};
+    return {i-1, k+1};
 }
 
 /**
