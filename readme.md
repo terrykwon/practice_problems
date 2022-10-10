@@ -4,4 +4,4 @@
 | codeforces | 12 |
 | cses | 46 |
 | algorithms | 19 |
-| leetcode | 82 |
+| leetcode | 83 |
